@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fc768ac85d.js" crossorigin="anonymous"></script>
+    <title>Adventure Post</title>
+  </head>
+
+  <body class="page light-theme">
+    <header class="page-header">
+        <div class="header-logo">
+          <i class="fa-solid fa-clover"></i>
+          <p class="logo-title">AdventureGram</p>
+        </div>
+        <button class="theme-button" type="button">Change theme</button>
+        <a class="signin" href="#">
+          <img class="icon" src="https://raw.githubusercontent.com/HelenVirtanen/Yacht_Club/024ae6f27c2e33c461eacc1767b2bf42098b78ac/img/icon.svg" width="16" height="18" alt="Кабинет пользователя"></a>
+    </header>
+
+    <main class="inner-news">
+      <div class="tooltip">
+        <span class="tooltip-text"></span>
+        <button class="button close-button" type="button"><span>Close</span></button>
+      </div>
+
+      <article class="container">
+        <h1 class="inner-heading">The Pink Wall in Los Angelles</h1>
+        <div class="news-full">
+          <div class="news-img"><img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Model with pink wall in LA" class="post-img"></div>
+
+        <div class="news-stats">
+            <button class="heart" type="button"><i class="fa-regular fa-heart"></i></button>
+            <p class="likes-number">699</p>
+            <time datetime="2025-02-14">14 February 2025</time>
+        </div>
+
+        <div class="news-description">
+          <p class="post__text">Just stumbled upon <button class="tooltip-button" type="button" data-tooltip-text="The Pink Wall is located on Melrose Avenue, right outside the Paul Smith store">the Pink Wall in LA</button>, and wow, it’s such a <button class="tooltip-button" type="button" data-tooltip-text="Despite being just a wall, it’s one of LA's must-visit landmarks, drawing crowds daily">vibe</button> 😍 The textures, the colors—it’s giving major <button class="tooltip-button" type="button" data-tooltip-text="if u know what I mean">inspo</button>. Perfect little corner for an impromptu photo shoot or just to take a moment and soak up the artsy energy. Who knew a wall could make you feel so alive? Definitely adding this to my list of hidden <button class="tooltip-button" type="button" data-tooltip-text="See more in bio 💖">gems in the city</button> ✨</p>
+          <p class="post__text post__text--hashtags">#LALife #ArtEverywhere #MinkWallMoments"</p>
+        </div>
+        </div>
+        </article>
+
+        <section class="comment-feed container">
+          <h2>Comments</h2>
+          <ol class="comment-list">
+            <li class="user-comment">It`s amazing!!!</li>
+          </ol>
+          <form action="https://echo.htmlacademy.ru/courses" method="post" class="comment-form">
+            <div class="comment-inner">
+              <label class="comment-label" for="comment-textarea">Your comment</label>
+              <textarea class="comment-field comment-area" rows="3" placeholder="Comment" required id="comment-textarea"></textarea>
+              <div class="text-counter">Used <output class="char-counter" for="comment-textarea">0</output>/150 symbols</div>
+              <button class="button submit-button" type="submit">Send</button>
+          </div>
+            
+          </form>
+        </section>
+    </main>
+
+      <footer class="page-footer">
+          <div class="footer-logo">
+              <i class="fa-solid fa-clover fa-clover--footer"></i>
+              <p class="company-footer-title">© AdventureGram</p>
+          </div>
+      </footer>
+
+    <script src="themes.js"></script>
+    <script src="likes.js"></script>
+    <script src="comments.js"></script>
+    <script src="tooltip.js"></script>
+    
+  </body>
+</html>
