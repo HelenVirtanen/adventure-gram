@@ -1,0 +1,357 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.page-header {
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    background-color: #9bc65c;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    color: #005100;
+    margin-right: auto;
+}
+
+.fa-clover {
+    font-size: 28px;
+}
+
+.logo-title {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    
+}
+
+.theme-button {
+    border: none;
+    border-radius: 15px;
+    padding: 8px 16px;
+    background: #438d43;
+    font-family: inherit;
+    font-size: 14px;
+    color: #ffffff;
+    transition: background .2s linear;
+}
+
+.theme-button:hover {
+    background: #681b8a;
+}
+
+.signin {
+    width: 36px;
+    height: 36px;
+    text-decoration: none;
+    padding: 8px 9px;
+    border: 1px solid #438d43;
+    border-radius: 50%;
+    color: #438d43;
+    transition: border .1s linear;
+    margin-left: 40px;
+}
+
+.signin:hover {
+  border: 1px solid #681b8a;
+}
+
+.inner-news {
+    width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9fae3;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+
+.inner-heading {
+    font-family: "Emilys Candy", serif;
+    color: #6d0041;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+.news-img {
+    margin: 0 auto 20px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 30px 0;
+    box-shadow: 2px 2px 12px #6d0041;
+}
+
+.post-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-stats {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+
+.heart { 
+    border: 0;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+i.fa-heart {
+    font-size: 25px;
+    color: #6d0041;
+    transition: color .3s linear;
+}
+
+i.fa-heart:hover {
+    font-weight: 700;
+}
+
+.likes-number {
+    margin: 0;
+    margin-right: auto;
+}
+
+.post__text {
+    margin: 0 auto 10px;
+    padding: 0 12px;
+}
+
+.post__text--hashtags {
+    color:#533b56;
+    font-size: 13px;
+}
+
+.news-description {
+    margin: 0;
+}
+
+/* Стили текста-кнопки */
+.tooltip-button {
+    cursor: pointer;
+    position: relative;
+    padding: 1px 8px;
+    border: none;
+    color: inherit;
+    font: inherit;
+  }
+  
+  .tooltip-button::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 4px solid;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+  }
+  
+  /* Стили тултипа */
+  @keyframes tooltip-opener {
+    0% {
+      transform: translate(50%) scaleX(0);
+    }
+  
+    100% {
+      transform: translate(100%) scaleX(100%);
+    }
+  }
+  
+  .tooltip {
+    z-index: 2;
+    display: none;
+    flex-direction: row-reverse;
+    position: fixed;
+    max-width: 256px;
+    right: 0;
+    top: 160px;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .opened {
+    display: flex;
+    animation: tooltip-opener 150ms;
+  }
+  
+  .tooltip-text {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .close-button {
+    min-height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    margin: 0;
+    padding: 0;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .close-button span {
+    display: inline-block;
+    vertical-align: middle;
+    transform: rotate(-90deg);
+  }
+  
+  /* Стили блока ввода комментария */
+
+  .comment-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+  }
+
+  .comment-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .comment-area {
+    height: unset;
+    resize: none;
+    margin-bottom: 10px;
+    padding: 4px 10px;
+    line-height: 24px;
+    border-radius: 20px;
+    border: 1px solid #681b8a;
+    width: 70%;
+    margin-left: auto;
+  }
+  
+  .text-counter {
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 7px 0;
+    margin-left: auto;
+  }
+  
+  .comment-form.warning .comment-label {
+    color: #f05b29;
+  }
+  
+  .comment-form.warning .comment-area {
+    color: #f05b29;
+    border-color: #f05b29;
+  }
+  
+  .comment-form.warning .comment-area:focus {
+    outline-color: #f05b29;
+  }
+  
+  .comment-form.warning .char-counter {
+    color: #f05b29;
+    font-weight: bold;
+  }
+  
+  .submit-button:disabled {
+    opacity: 0.25;
+  }
+  
+  /* Цветовые темы */
+  .light-theme .tooltip {
+    background-color: #ffffff;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  .light-theme .tooltip-button {
+    background-color: #ddedc8;
+  }
+  
+  .light-theme .tooltip-button:focus,
+  .light-theme .tooltip-button:hover {
+    background-color: #dac4dd;
+    color: #333;
+    outline-color: #b6aaff;
+  }
+  
+  .tooltip-button:active {
+    opacity: 0.6;
+  }
+  
+  .light-theme .tooltip-button::after {
+    border-right-color: #681b8a;
+    border-top-color: #681b8a;
+  }
+  
+  .dark-theme .tooltip {
+    background-color: #2a2930;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 1);
+  }
+  
+  .dark-theme .tooltip-button {
+    background-color: #0a0910;
+  }
+  
+  .dark-theme .tooltip-button:focus,
+  .dark-theme .tooltip-button:hover {
+    outline-color: #6653d9;
+    background-color: #e6c7db;
+    color: #17161a;
+  }
+  
+  .dark-theme .tooltip-button::after {
+    border-right-color: #b6aaff;
+    border-top-color: #b6aaff;
+  }
+  
+
+
+  .page-footer {
+    width: 800px;
+    padding: 12px 30px;
+    margin: 0 auto;
+    background-color: #005100;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;  
+    color: #005100;
+    font-size: 16px;
+  }
+
+.fa-clover--footer {
+    font-size: 20px;
+    color: #9bc65c;
+}
+
+.company-footer-title {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #fff;
+}
