@@ -41,6 +41,10 @@ body {
     
 }
 
+.logo-title:hover {
+  color: #681b8a;
+}
+
 .theme-button {
     border: none;
     border-radius: 15px;
