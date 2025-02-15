@@ -178,7 +178,7 @@ i.fa-heart:hover {
     border-bottom-color: transparent;
   }
   
-  /* Стили тултипа */
+  /* Tooltip */
   @keyframes tooltip-opener {
     0% {
       transform: translate(50%) scaleX(0);
@@ -228,58 +228,68 @@ i.fa-heart:hover {
     transform: rotate(-90deg);
   }
   
-  /* Стили блока ввода комментария */
+  /* Comments */
 
-  .comment-list {
+  .comments__title {
+    color: #681b8a;
+  }
+
+  .comments__list {
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
     list-style: none;
     margin-bottom: 20px;
   }
 
-  .comment-inner {
+  .comment__inner {
     display: flex;
     flex-direction: column;
   }
 
-  .comment-area {
-    height: unset;
+  .comment__label {
+    margin-bottom: 15px;
+  }
+
+  .comment__area {
+    height: 120px;
     resize: none;
     margin-bottom: 10px;
-    padding: 4px 10px;
+    padding: 7px 12px;
     line-height: 24px;
     border-radius: 20px;
-    border: 1px solid #681b8a;
-    width: 70%;
-    margin-left: auto;
+    border: 1px solid #438d43;
+    color: #681b8a;
+    font-family: inherit;
+    width: 100%;
+    background-color: #ddedc8;
   }
-  
-  .text-counter {
+
+  .text__counter {
     display: inline-block;
     vertical-align: baseline;
     padding: 7px 0;
     margin-left: auto;
   }
   
-  .comment-form.warning .comment-label {
+  .comment__form.warning .comment__label {
     color: #f05b29;
   }
   
-  .comment-form.warning .comment-area {
+  .comment__form.warning .comment__area {
     color: #f05b29;
     border-color: #f05b29;
   }
   
-  .comment-form.warning .comment-area:focus {
+  .comment__form.warning .comment__area:focus {
     outline-color: #f05b29;
   }
   
-  .comment-form.warning .char-counter {
+  .comment__form.warning .char__counter {
     color: #f05b29;
     font-weight: bold;
   }
   
-  .submit-button:disabled {
+  .submit__button:disabled {
     opacity: 0.25;
   }
   
