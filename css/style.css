@@ -150,6 +150,7 @@ i.fa-heart:hover {
 .post__text--hashtags {
     color:#533b56;
     font-size: 13px;
+    margin-bottom: 30px;
 }
 
 .news-description {
@@ -231,7 +232,20 @@ i.fa-heart:hover {
   /* Comments */
 
   .comments__title {
+    margin-top: 0;
+    font-size: 17px;
     color: #681b8a;
+    text-align: center;
+  }
+
+  .comments__title::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 3px;
+    background-color: #dac4dd;
+    border-radius: 5px;
+    margin: 0 auto 5px;
   }
 
   .comments__list {
@@ -253,7 +267,7 @@ i.fa-heart:hover {
   .comment__area {
     height: 120px;
     resize: none;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     padding: 7px 12px;
     line-height: 24px;
     border-radius: 20px;
@@ -267,8 +281,10 @@ i.fa-heart:hover {
   .text__counter {
     display: inline-block;
     vertical-align: baseline;
-    padding: 7px 0;
+    padding: 5px 10px;
     margin-left: auto;
+    margin-bottom: 15px;
+    font-size: 12px;
   }
   
   .comment__form.warning .comment__label {
