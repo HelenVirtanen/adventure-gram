@@ -1,7 +1,7 @@
 let tooltip = document.querySelector('.tooltip');
-let closeButton = document.querySelector('.close-button');
-let tooltipButtons = document.querySelectorAll('.tooltip-button');
-let tooltipText = document.querySelector('.tooltip-text');
+let closeButton = document.querySelector('.close__button');
+let tooltipButtons = document.querySelectorAll('.tooltip__button');
+let tooltipText = document.querySelector('.tooltip__text');
 
 
 closeButton.onclick = function () {

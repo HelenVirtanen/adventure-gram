@@ -11,7 +11,7 @@ body {
     font-size: 14px;
 }
 
-.page-header {
+.page__header {
     display: flex;
     width: 800px;
     margin: 0 auto;
@@ -21,7 +21,7 @@ body {
     background-color: #9bc65c;
 }
 
-.header-logo {
+.header__logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,18 +34,18 @@ body {
     font-size: 28px;
 }
 
-.logo-title {
+.logo__title {
     margin: 0;
     padding: 0;
     font-size: 18px;
     
 }
 
-.logo-title:hover {
+.logo__title:hover {
   color: #681b8a;
 }
 
-.theme-button {
+.theme__button {
     border: none;
     border-radius: 15px;
     padding: 8px 16px;
@@ -56,7 +56,7 @@ body {
     transition: background .2s linear;
 }
 
-.theme-button:hover {
+.theme__button:hover {
     background: #681b8a;
 }
 
@@ -76,7 +76,7 @@ body {
   border: 1px solid #681b8a;
 }
 
-.inner-news {
+.inner__news {
     width: 800px;
     margin: 0 auto;
     padding: 30px;
@@ -90,14 +90,14 @@ body {
 
 
 
-.inner-heading {
+.inner__heading {
     font-family: "Emilys Candy", serif;
     color: #6d0041;
     text-align: center;
     margin: 0 auto 20px;
 }
 
-.news-img {
+.news__img {
     margin: 0 auto 20px;
     width: 400px;
     height: 400px;
@@ -106,13 +106,13 @@ body {
     box-shadow: 2px 2px 12px #6d0041;
 }
 
-.post-img {
+.post__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.news-stats {
+.news__stats {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
@@ -137,7 +137,7 @@ i.fa-heart:hover {
     font-weight: 700;
 }
 
-.likes-number {
+.likes__number {
     margin: 0;
     margin-right: auto;
 }
@@ -153,12 +153,12 @@ i.fa-heart:hover {
     margin-bottom: 30px;
 }
 
-.news-description {
+.news__description {
     margin: 0;
 }
 
-/* Стили текста-кнопки */
-.tooltip-button {
+/* Tooltip button */
+.tooltip__button {
     cursor: pointer;
     position: relative;
     padding: 1px 8px;
@@ -167,7 +167,7 @@ i.fa-heart:hover {
     font: inherit;
   }
   
-  .tooltip-button::after {
+  .tooltip__button::after {
     position: absolute;
     content: "";
     top: 0;
@@ -206,13 +206,13 @@ i.fa-heart:hover {
     animation: tooltip-opener 150ms;
   }
   
-  .tooltip-text {
+  .tooltip__text {
     display: flex;
     align-items: center;
     padding: 10px;
   }
   
-  .close-button {
+  .close__button {
     min-height: 64px;
     display: flex;
     justify-content: center;
@@ -223,7 +223,7 @@ i.fa-heart:hover {
     border-radius: 8px 0 0 8px;
   }
   
-  .close-button span {
+  .close__button span {
     display: inline-block;
     vertical-align: middle;
     transform: rotate(-90deg);
@@ -298,7 +298,6 @@ i.fa-heart:hover {
     padding: 10px 8px 15px;
   }
 
-
   .comment__form.warning .comment__label {
     color: #f05b29;
   }
@@ -334,68 +333,66 @@ i.fa-heart:hover {
     background: #681b8a;
   }
 
-
   .submit__button:disabled {
     opacity: 0.25;
   }
   
   /* Цветовые темы */
-  .light-theme .tooltip {
+  .light__theme .tooltip {
     background-color: #ffffff;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
   }
   
-  .light-theme .tooltip-button {
+  .light__theme .tooltip__button {
     background-color: #ddedc8;
   }
   
-  .light-theme .tooltip-button:focus,
-  .light-theme .tooltip-button:hover {
+  .light__theme .tooltip__button:focus,
+  .light__theme .tooltip__button:hover {
     background-color: #dac4dd;
     color: #333;
     outline-color: #b6aaff;
   }
   
-  .tooltip-button:active {
+  .tooltip__button:active {
     opacity: 0.6;
   }
   
-  .light-theme .tooltip-button::after {
+  .light__theme .tooltip__button::after {
     border-right-color: #681b8a;
     border-top-color: #681b8a;
   }
   
-  .dark-theme .tooltip {
+  .dark__theme .tooltip {
     background-color: #2a2930;
     box-shadow: 0 0 16px rgba(0, 0, 0, 1);
   }
   
-  .dark-theme .tooltip-button {
+  .dark__theme .tooltip__button {
     background-color: #0a0910;
   }
   
-  .dark-theme .tooltip-button:focus,
-  .dark-theme .tooltip-button:hover {
+  .dark__theme .tooltip__button:focus,
+  .dark__theme .tooltip__button:hover {
     outline-color: #6653d9;
     background-color: #e6c7db;
     color: #17161a;
   }
   
-  .dark-theme .tooltip-button::after {
+  .dark__theme .tooltip__button::after {
     border-right-color: #b6aaff;
     border-top-color: #b6aaff;
   }
-  
 
-
-  .page-footer {
+  /* Footer */
+  .page__footer {
     width: 800px;
     padding: 12px 30px;
     margin: 0 auto;
     background-color: #005100;
   }
 
-  .footer-logo {
+  .footer__logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -409,7 +406,7 @@ i.fa-heart:hover {
     color: #9bc65c;
 }
 
-.company-footer-title {
+.company__footer_title {
     margin: 0;
     padding: 0;
     font-size: 12px;
