@@ -9,5 +9,5 @@ heart.onclick = function () {
     likesNumber.textContent++;
   }
   heart.classList.toggle('added');
-  heartView.classList.toggle('fa-regular');
+  heartView.classList.toggle('fa-solid');
 };
