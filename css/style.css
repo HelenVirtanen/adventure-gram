@@ -261,7 +261,10 @@ i.fa-heart:hover {
   }
 
   .comment__label {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+    padding: 0 10px;
+    font-size: 13px;
+    color: #005100;
   }
 
   .comment__area {
@@ -278,15 +281,24 @@ i.fa-heart:hover {
     background-color: #ddedc8;
   }
 
+  .comment__area:focus {
+    outline-color: #681b8a;
+  }
+
   .text__counter {
     display: inline-block;
     vertical-align: baseline;
     padding: 5px 10px;
     margin-left: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 12px;
   }
   
+  .user__comment {
+    padding: 10px 8px 15px;
+  }
+
+
   .comment__form.warning .comment__label {
     color: #f05b29;
   }
@@ -305,6 +317,24 @@ i.fa-heart:hover {
     font-weight: bold;
   }
   
+  .submit__button {
+    width: 135px;
+    margin: 0;
+    margin-left: auto;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 16px;
+    background: #438d43;
+    font-family: inherit;
+    font-size: 14px;
+    color: #ffffff;
+    transition: background .2s linear;
+}
+  .submit__button:hover {
+    background: #681b8a;
+  }
+
+
   .submit__button:disabled {
     opacity: 0.25;
   }
