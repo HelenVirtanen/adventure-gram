@@ -11,7 +11,7 @@ body {
     font-size: 14px;
 }
 
-.page__header {
+.header {
     display: flex;
     width: 800px;
     margin: 0 auto;
@@ -336,7 +336,7 @@ i.fa-heart:hover {
     opacity: 0.25;
   }
   
-  /* Цветовые темы */
+  /* Light theme */
   .light__theme .tooltip {
     background-color: #ffffff;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
@@ -361,7 +361,47 @@ i.fa-heart:hover {
     border-right-color: #681b8a;
     border-top-color: #681b8a;
   }
+
+
+  /* Dark theme*/
+  .dark__theme .header {
+    background-color:  #005100; 
+  }
   
+  .dark__theme .header__logo {
+    color: #9bc65c;
+  }
+
+  .dark__theme .inner__news {
+    background-color: #17161a;
+    color: #dac4dd;
+  }
+
+  .dark__theme .inner__heading {
+    color: #d34b9c;
+  }
+
+  .dark__theme .news__img {
+    box-shadow: 2px 2px 30px #d34b9c;
+  }
+  
+  i.fa-heart {
+    color: #ff22a6;
+  }
+
+  .dark__theme .comments__title {
+    color: #b6aaff;
+  }
+
+  .dark__theme .comment__label {
+    color: #9bc65c;
+  }
+
+  .dark__theme .post__text--hashtags {
+    color: #b6aaffb0;
+  }
+
+
   .dark__theme .tooltip {
     background-color: #2a2930;
     box-shadow: 0 0 16px rgba(0, 0, 0, 1);
