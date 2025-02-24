@@ -396,6 +396,10 @@ i.fa-heart:hover {
     color: #9bc65c;
   }
 
+  .dark__theme .comment__area {
+    background-color: #dac4dd;
+    }
+
   .dark__theme .post__text--hashtags {
     color: #b6aaffb0;
   }
