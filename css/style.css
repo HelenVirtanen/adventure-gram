@@ -84,7 +84,7 @@ body {
 }
 
 .container {
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -473,14 +473,27 @@ i.fa-heart:hover {
     word-wrap: break-word;
   }
 
+  .header__signin {
+    margin-left: 20px;
+  }
+
+  .inner__news {
+    padding: 27px;
+  }
+
   .container {
-    width: 345px;
+    max-width: 100%;
   }
 
   .news__img {
-    width: 350px;
+    width: 100%;
     height: 350px;
     box-shadow: 0px 1px 7px #6d0041;
+  }
+
+  .news__full {
+    padding: 0;
+    margin: 0 auto;
   }
 
   .footer {
