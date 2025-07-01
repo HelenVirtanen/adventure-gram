@@ -2,6 +2,7 @@ let commentForm = document.querySelector('.comment__form');
 let commentList = document.querySelector('.comments__list');
 let commentField = document.querySelector('.comment__field');
 let charCounter = document.querySelector('.char__counter');
+let submitButton = document.querySelector('.submit__button');
 
 commentForm.onsubmit = function (evt) {
   evt.preventDefault();
